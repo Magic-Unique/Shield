@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Shield_Example' do
+  pod 'Shield', :path => '../'
+
+  target 'Shield_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
