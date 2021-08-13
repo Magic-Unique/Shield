@@ -7,12 +7,15 @@
 //
 
 #import "SHAppDelegate.h"
+#import <Shield/Shield.h>
 
 @implementation SHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Shield shared].configuration.coverStyle = SHCoverStyleDarkBlur;
+    [[Shield shared] start];
     return YES;
 }
 

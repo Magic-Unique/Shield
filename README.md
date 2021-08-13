@@ -22,7 +22,7 @@ pod 'Shield'
 
 ## Author
 
-Magic-Unique, uniquewu@tencent.com
+Magic-Unique, 516563564@qq.com
 
 ## License
 

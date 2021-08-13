@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Shield'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Shield.'
+  s.summary          = 'An application background cover manager.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Shield create a cover view on app window to hide all ui infomation when app has enter background
                        DESC
 
   s.homepage         = 'https://github.com/Magic-Unique/Shield'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Magic-Unique' => 'uniquewu@tencent.com' }
-  s.source           = { :git => 'https://github.com/Magic-Unique/Shield.git', :tag => s.version.to_s }
+  s.author           = { 'Magic-Unique' => '516563564@qq.com' }
+  s.source           = { :git => 'https://github.com/Magic-Unique/Shield.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

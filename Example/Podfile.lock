@@ -1,0 +1,16 @@
+PODS:
+  - Shield (0.1.0)
+
+DEPENDENCIES:
+  - Shield (from `../`)
+
+EXTERNAL SOURCES:
+  Shield:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Shield: fb7a5228a03c1095429f31c3bf025b913f8b04b6
+
+PODFILE CHECKSUM: d1719b886e42e48d752f8abda661b382d752a27e
+
+COCOAPODS: 1.7.5
