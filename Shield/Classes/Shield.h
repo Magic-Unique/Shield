@@ -6,32 +6,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SHDefine.h"
 
-
-typedef NS_ENUM(NSUInteger, SHCoverStyle) {
-    SHCoverStyleLightBlur,
-    SHCoverStyleDarkBlur,
-};
-
-
-
-@interface SHCoverConfiguration : NSObject
-
-@property (nonatomic, assign) SHCoverStyle coverStyle;
-
-@end
-
-
+@class LAContext;
 
 @interface Shield : NSObject
 
 @property (nonatomic, assign, readonly) BOOL enable;
 
-@property (nonatomic, strong) SHCoverConfiguration *configuration;
+@property (nonatomic, assign, readonly) SHLocalAuthType authType;
 
-+ (instancetype)shared;
+- (instancetype)initWithConfiguration:(SHCoverConfiguration *)configuration;
 
-- (void)start;
-- (void)stop;
+- (void)enableWithCompleted:(void (^)(BOOL success, NSError *error))completion;
+
+- (void)disable;
 
 @end

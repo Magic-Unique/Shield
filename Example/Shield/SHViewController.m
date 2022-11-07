@@ -7,6 +7,7 @@
 //
 
 #import "SHViewController.h"
+#import "Shield+Example.h"
 
 @interface SHViewController ()
 
@@ -24,6 +25,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)onSwitch:(UISwitch *)sender {
+    if (sender.isOn) {
+        sender.enabled = NO;
+        [[Shield sharedInstance] enableWithCompleted:^(BOOL success, NSError *error) {
+            if (!success) {
+                sender.on = NO;
+            }
+            sender.enabled = YES;
+        }];
+    } else {
+        [[Shield sharedInstance] disable];
+    }
 }
 
 @end

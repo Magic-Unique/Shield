@@ -1,16 +1,23 @@
 PODS:
-  - Shield (0.1.0)
+  - Masonry (1.1.0)
+  - Shield (0.1.0):
+    - Masonry
 
 DEPENDENCIES:
   - Shield (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
 
 EXTERNAL SOURCES:
   Shield:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Shield: fb7a5228a03c1095429f31c3bf025b913f8b04b6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Shield: c0d72840fa5485612246db6c63efcfc3c1a906c9
 
-PODFILE CHECKSUM: d1719b886e42e48d752f8abda661b382d752a27e
+PODFILE CHECKSUM: 948334ae6bd000a061862e8c7a9e57dfde152a32
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.11.3

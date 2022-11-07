@@ -8,14 +8,23 @@
 
 #import "SHAppDelegate.h"
 #import <Shield/Shield.h>
+#import "Shield+Example.h"
+
+@interface SHAppDelegate ()
+
+@property (nonatomic, strong, readonly) Shield *shield;
+
+@end
 
 @implementation SHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [Shield shared].configuration.coverStyle = SHCoverStyleDarkBlur;
-    [[Shield shared] start];
+    [Shield sharedInstance];
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self.shield performSelector:@selector(__onResignActive:) withObject:nil];
+//    });
     return YES;
 }
 

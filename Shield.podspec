@@ -32,11 +32,13 @@ Shield create a cover view on app window to hide all ui infomation when app has 
 
   s.source_files = 'Shield/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Shield' => ['Shield/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'Shield' => ['Shield/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
+  
 end
