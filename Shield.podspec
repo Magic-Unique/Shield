@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Shield'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'An application background cover manager.'
 
 # This description is used to generate tags and improve search results.
